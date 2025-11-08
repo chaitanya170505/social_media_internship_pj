@@ -1,0 +1,106 @@
+/* General Card Styling */
+.post-card {
+  background-color: #ffffff; /* A very light, calming blue */
+  border: 1px solid #b0c4de; /* A slightly darker blue for the border */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.post-card-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: #e6e6fa; /* A subtle lavender blue */
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #191970; /* Midnight blue for high contrast */
+}
+
+.category-tag {
+  background-color: #4682b4; /* Steel blue */
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Body Section */
+.post-card-body {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-author,
+.card-location,
+.card-date,
+.card-description {
+  margin: 5px 0;
+  color: #36454f; /* Charcoal gray-blue */
+}
+
+.author-link {
+  color: #00008b; /* Dark blue for links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+.card-description {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.read-more {
+  color: #4169e1; /* Royal blue for the "Read more" link */
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.read-more:hover {
+  color: #1e90ff; /* Dodger blue on hover */
+}
+
+/* Image */
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .post-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title {
+    margin-bottom: 5px;
+  }
+}

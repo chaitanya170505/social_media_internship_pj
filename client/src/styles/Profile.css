@@ -1,0 +1,109 @@
+.user-profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff; /* changed to white */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e3a8a; /* default text color: blue */
+}
+
+.user-profile-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* blue text */
+}
+
+.user-profile-container p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #1e3a8a; /* blue text */
+}
+
+.user-profile-input,
+.user-profile-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.user-profile-input:focus,
+.user-profile-textarea:focus {
+  border-color: #1e3a8a; /* focus border blue */
+  outline: none;
+}
+
+.user-profile-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.user-profile-button {
+  margin-top: 12px;
+  margin-right: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.user-profile-button.save {
+  background: #1e3a8a; /* blue button */
+  color: white;
+}
+
+.user-profile-button.save:hover {
+  background: #153370; /* darker blue */
+}
+
+.user-profile-button.cancel {
+  background: #e74c3c;
+  color: white;
+}
+
+.user-profile-button.cancel:hover {
+  background: #c0392b;
+}
+
+.user-profile-container h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  color: #1e3a8a; /* blue text */
+}
+
+.user-profile-posts {
+  list-style: none;
+  padding: 0;
+}
+
+.user-profile-post-item {
+  background: #f9f9f9;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #1e3a8a; /* blue text */
+  transition: background 0.2s;
+}
+
+.user-profile-post-item:hover {
+  background: #e0f0ff;
+}
+
+/* Remove underline from links inside profile container */
+.user-profile-container a {
+  color: #1e3a8a; /* blue */
+  text-decoration: none;
+}
+
+.user-profile-container a:hover {
+  text-decoration: underline; /* optional hover effect */
+}

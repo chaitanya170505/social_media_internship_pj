@@ -1,0 +1,81 @@
+/* Container */
+.view-profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Profile Header */
+.view-profile-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.view-profile-container p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Posts Section */
+.view-profile-container h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Posts List */
+.view-profile-posts {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Post */
+.view-profile-post-item {
+  background-color: #eeebeb;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Post Heading */
+.view-profile-post-item h4 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Post Paragraph */
+.view-profile-post-item p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Post Image */
+.view-profile-post-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .view-profile-posts {
+    grid-template-columns: 1fr;
+  }
+}

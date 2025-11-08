@@ -1,0 +1,68 @@
+/* About.css */
+.about-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #f1f6ff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-section {
+  text-align: center;
+  max-width: 800px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px dotted #00aaff;
+  box-shadow: 0 0 10px 5px rgba(0, 162, 255, 0.7);
+}
+
+.profile-section h2 {
+  margin: 10px 0 5px;
+  font-size: 1.8rem;
+}
+
+.role {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0095ff;
+}
+
+.bio {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.about-content {
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 40px;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}

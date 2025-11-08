@@ -1,0 +1,120 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #5783a9; /* Light, calming blue */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* --- */
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9e2f5; /* Lighter blue border */
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #a4c6e2; /* A subtle, light blue placeholder */
+}
+
+/* --- */
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 15px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #1e3c72; /* Dark blue for menu items */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.menu-item:hover {
+  background-color: #e6f2ff; /* Very light blue on hover */
+  color: #0d214a; /* A darker blue on hover for contrast */
+}
+
+.menu-item.active {
+  background-color: #5d9fe8; /* Professional blue for active item */
+  color: white;
+  font-weight: bold;
+}
+
+.menu-item.active:hover {
+  background-color: #4a90e2; /* Darker blue on hover for active state */
+  color: white;
+}
+
+
+
+/* Sidebar.css - Add to your existing file */
+
+/* Add New Category Section */
+.add-category-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #c9e2f5; /* Light separator line */
+}
+
+.add-category-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9e2f5;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-category-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3c618a; /* Matches the active menu item blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-category-section button:hover {
+  background-color: #29415c; /* Darker blue on hover */
+}
+
+.add-category-section input[type="text"]::placeholder {
+  color: #a4c6e2;
+}

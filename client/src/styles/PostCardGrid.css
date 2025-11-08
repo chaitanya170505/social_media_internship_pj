@@ -1,0 +1,14 @@
+.post-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .post-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
